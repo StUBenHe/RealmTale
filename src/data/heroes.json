@@ -1,0 +1,44 @@
+{
+  "heroes": [
+    {
+      "id": "knight_01",
+      "name": "Sir Aldric",
+      "class": "KNIGHT",
+      "level": 1,
+      "hp": 120,
+      "attack": 15,
+      "defense": 20,
+      "cost": {"gold": 300}
+    },
+    {
+      "id": "wizard_01",
+      "name": "Elara Moonveil",
+      "class": "WIZARD",
+      "level": 1,
+      "hp": 70,
+      "attack": 25,
+      "defense": 8,
+      "cost": {"gold": 350, "scrolls": 30}
+    },
+    {
+      "id": "rogue_01",
+      "name": "Shadow Thorne",
+      "class": "ROGUE",
+      "level": 1,
+      "hp": 85,
+      "attack": 20,
+      "defense": 10,
+      "cost": {"gold": 250}
+    },
+    {
+      "id": "cleric_01",
+      "name": "Brother Matthias",
+      "class": "CLERIC",
+      "level": 1,
+      "hp": 90,
+      "attack": 10,
+      "defense": 12,
+      "cost": {"gold": 280, "herbs": 40}
+    }
+  ]
+}

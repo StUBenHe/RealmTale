@@ -1,0 +1,32 @@
+{
+  "buildings": [
+    {
+      "id": "house",
+      "name": "House",
+      "max_level": 5,
+      "base_cost": {"gold": 100, "iron": 20},
+      "production": {"gold": 10}
+    },
+    {
+      "id": "blacksmith",
+      "name": "Blacksmith",
+      "max_level": 3,
+      "base_cost": {"gold": 200, "iron": 100},
+      "production": {"iron": 15}
+    },
+    {
+      "id": "herb_garden",
+      "name": "Herb Garden",
+      "max_level": 3,
+      "base_cost": {"gold": 150, "herbs": 50},
+      "production": {"herbs": 10}
+    },
+    {
+      "id": "library",
+      "name": "Library",
+      "max_level": 3,
+      "base_cost": {"gold": 300, "scrolls": 20},
+      "production": {"scrolls": 5}
+    }
+  ]
+}
