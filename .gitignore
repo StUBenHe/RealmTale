@@ -1,0 +1,60 @@
+# Godot 4
+.godot/
+*.import
+export_presets.cfg
+
+# Godot-specific ignores
+*.translation
+*.scn
+*.tscn
+*.tres
+*.res
+
+# Builds
+build/
+builds/
+export/
+*.apk
+*.aab
+*.ipa
+*.exe
+*.dmg
+*.app/
+
+# AI Generated Art (large assets - use LFS or external storage)
+assets/buildings/raw/
+assets/characters/raw/
+assets/effects/raw/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python (AI art tooling)
+__pycache__/
+*.pyc
+venv/
+.env
+
+# Logs
+*.log
+logs/
+
+# Large binaries (use Git LFS)
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.mp3
+*.wav
+*.ogg
+*.mp4
+*.avi
