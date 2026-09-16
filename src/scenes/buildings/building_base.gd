@@ -15,6 +15,7 @@ extends Area2D
 
 func _ready() -> void:
 	_update_label()
+	_update_texture()
 
 
 func upgrade() -> void:
@@ -22,6 +23,7 @@ func upgrade() -> void:
 		return
 	level += 1
 	_update_label()
+	_update_texture()
 
 
 func get_info() -> Dictionary:
@@ -38,3 +40,11 @@ func get_info() -> Dictionary:
 func _update_label() -> void:
 	if label:
 		label.text = "%s Lv.%d" % [building_name, level]
+
+
+func _update_texture() -> void:
+	if not sprite or building_id.is_empty():
+		return
+	var path := "res://assets/buildings/%s_lv%d.png" % [building_id, level]
+	if ResourceLoader.exists(path):
+		sprite.texture = load(path)

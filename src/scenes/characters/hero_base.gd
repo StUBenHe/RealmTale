@@ -17,6 +17,10 @@ enum HeroClass { KNIGHT, WIZARD, ROGUE, CLERIC }
 @onready var collision_shape: CollisionShape2D = $CollisionShape2D
 
 
+func _ready() -> void:
+	_update_texture()
+
+
 func take_damage(amount: int) -> void:
 	var actual_damage := maxi(amount - defense, 1)
 	hp -= actual_damage
@@ -39,3 +43,17 @@ func level_up() -> void:
 
 func _on_death() -> void:
 	queue_free()
+
+
+func _update_texture() -> void:
+	if not sprite:
+		return
+	var class_names := {
+		HeroClass.KNIGHT: "knight",
+		HeroClass.WIZARD: "wizard",
+		HeroClass.ROGUE: "rogue",
+		HeroClass.CLERIC: "cleric",
+	}
+	var path := "res://assets/characters/%s.png" % class_names.get(hero_class, "knight")
+	if ResourceLoader.exists(path):
+		sprite.texture = load(path)
