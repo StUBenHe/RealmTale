@@ -70,7 +70,7 @@ func _fill(from: Vector2i, to: Vector2i, tile: Vector2i) -> void:
 			ground.set_cell(Vector2i(x, y), 0, tile)
 
 
-def _populate_map() -> void:
+func _populate_map() -> void:
 	# ── Base: all grass with random flower variation ──
 	for x in range(MAP_W):
 		for y in range(MAP_H):
